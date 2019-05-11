@@ -23,7 +23,7 @@ namespace Application
 
             FftSize fftsize = CSCore.DSP.FftSize.Fft1024;
 
-            FftProvider fftHandler = new FftProvider(wasapi.sis.WaveFormat.Channels, CSCore.DSP.FftSize.Fft1024);
+            FFTHandler fftHandler = new FFTHandler(wasapi.sis.WaveFormat.Channels, wasapi.sis.WaveFormat.SampleRate, CSCore.DSP.FftSize.Fft1024);
 
             float[] fftValues = new float[(int)fftsize];
 
